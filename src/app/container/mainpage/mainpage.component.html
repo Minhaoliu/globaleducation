@@ -1,0 +1,75 @@
+<nz-layout>
+  <nz-header class="header">
+    Global Education International Students
+  </nz-header>
+
+  <div class="profile">
+      <a>Admin</a>
+      <span> / </span>
+      <a>Log in</a>
+  </div>
+
+<div class="menubar" style="height: 45px;">
+  <button nz-button nz-dropdown [nzDropdownMenu]="Home">
+    Home
+    <i nz-icon nzType="down"></i>
+  </button>
+  <button nz-button nz-dropdown [nzDropdownMenu]="Forms">
+    Forms
+    <i nz-icon nzType="down"></i>
+  </button>
+  <button nz-button nz-dropdown [nzDropdownMenu]="Housing">
+    Housing
+    <i nz-icon nzType="down"></i>
+  </button>
+  <button nz-button nz-dropdown [nzDropdownMenu]="Events">
+    Events
+    <i nz-icon nzType="down"></i>
+  </button>
+  <button nz-button nz-dropdown [nzDropdownMenu]="Blog">
+    Blog
+    <i nz-icon nzType="down"></i>
+  </button>
+    <div class="dropDownMenu">
+      <nz-dropdown-menu #Home="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+        </ul>
+      </nz-dropdown-menu>
+      <nz-dropdown-menu #Forms="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>Airport Pick Up</li>
+          <li nz-menu-item>Mentor Application</li>
+          <li nz-menu-item>Orientation</li>
+        </ul>
+      </nz-dropdown-menu>
+      <nz-dropdown-menu #Housing="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>Set House</li>
+          <li nz-menu-item>Look for a roomate</li>
+        </ul>
+      </nz-dropdown-menu>
+      <nz-dropdown-menu #Events="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+        </ul>
+      </nz-dropdown-menu>
+      <nz-dropdown-menu #Blog="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+          <li nz-menu-item></li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+</div>
+
+<nz-content>
+    <div class="inner-content">Content</div>
+  </nz-content>
+  <nz-footer>2019 Implement By Howard Lab</nz-footer>
+</nz-layout>
