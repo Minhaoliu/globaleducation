@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { MainpageComponent } from './container/mainpage/mainpage.component';
+import { LoginComponent } from './container/login/login.component';
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainpageComponent
+    MainpageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
